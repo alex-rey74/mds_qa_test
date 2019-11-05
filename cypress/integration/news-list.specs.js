@@ -1,3 +1,5 @@
+/// <reference types='Cypress' />
+
 describe('News List', () => {
     it('Test list length', () => {
         cy.visit('/')
