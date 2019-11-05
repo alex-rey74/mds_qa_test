@@ -1,0 +1,22 @@
+{
+  "name": "mds_qa_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-rey74/mds_qa_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-rey74/mds_qa_test/issues"
+  },
+  "homepage": "https://github.com/alex-rey74/mds_qa_test#readme",
+  "dependencies": {
+    "cypress": "^3.6.0"
+  }
+}
