@@ -1,6 +1,6 @@
 /// <reference types='Cypress' />
 
-describe('News List', () => {
+describe('News List Tests', () => {
     it('Test list length', () => {
         cy.visit('/')
         cy.get('.news-item')
@@ -14,5 +14,5 @@ describe('News List', () => {
         .and('equal', '_blank')
     })
 
-    
+
 })
