@@ -1,4 +1,5 @@
 describe('Structure test', () => {
+    
     it('https valid', () => {
         cy.visit('/')
         cy.url()
@@ -8,7 +9,9 @@ describe('Structure test', () => {
     it('is responsive', () => {
         cy.viewport('iphone-6')
         cy.visit('/')
-
-        //TODO
+        /*
+        cy.get('.news-list')
+        .should('have.css', '@media')
+        */
     })
 })

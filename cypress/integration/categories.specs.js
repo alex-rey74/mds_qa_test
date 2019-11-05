@@ -13,6 +13,13 @@ describe('Categories tests', () => {
         .contains(/^Ask HN:/)
     })
 
+    it('Ask News doesn\'t have external links', () => {
+        cy.visit('/item/21451124')
+        cy.get('.item-view-header a')
+        .should('have.attr', 'target', '_blank')
+    })
+
+    //on vérifie la barre de menu
     it('Test have all categories', () => {
         cy.visit('/')
         cy.get('.header .inner a')
@@ -23,6 +30,7 @@ describe('Categories tests', () => {
         .and('contain.text', 'Jobs')
     })
 
+    // que le menu soit visible sur toutes les pages
     it('Categories are on all pages', () => {
         let categoriesUrl = ['top', 'new', 'show', 'ask', 'job']
 

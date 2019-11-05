@@ -1,4 +1,5 @@
 describe('User tests', () => {
+    //le lien "user" renvoi bien vers la page de l'utilisateur associé
     it('url to user is valid', () => {
         //var global pour shunter le scope du premier then
         var url = ''
@@ -15,7 +16,7 @@ describe('User tests', () => {
         })
     })
 
-
+    // la page user contient toutes les infos demandées
     it('Find info about an user', () => {
         cy.visit('/')
         cy.get('.news-item:first .meta .by a')
