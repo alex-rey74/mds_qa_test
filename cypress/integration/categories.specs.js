@@ -1,6 +1,18 @@
 /// <reference types='Cypress' />
 
 describe('Categories tests', () => {
+    it('News in Show category begin with "Show HN:" ', () => {
+        cy.visit('/show')
+        cy.get('.news-item .title a')
+        .contains(/Show HN:/)
+    })
+
+    it('News in Ask category begin with "Ask HN:" ', () => {
+        cy.visit('/ask')
+        cy.get('.news-item .title a')
+        .contains(/^Ask HN:/)
+    })
+
     it('Test have all categories', () => {
         cy.visit('/')
         cy.get('.header .inner a')

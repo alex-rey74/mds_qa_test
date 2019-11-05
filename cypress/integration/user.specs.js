@@ -1,21 +1,20 @@
 describe('User tests', () => {
     it('url to user is valid', () => {
+        //var global pour shunter le scope du premier then
         var url = ''
+
         cy.visit('/')
         cy.get('.news-item:first .meta .by a')
         .then(($a) => {
             url = $a.attr('href')
-            console.log(url)
         })
         .click()
         .then(() => {
             cy.url()
             .should('contain', url)
-            console.log('url : ' + url)
         })
-
-
     })
+
 
     it('Find info about an user', () => {
         cy.visit('/')

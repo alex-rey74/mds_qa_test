@@ -1,4 +1,6 @@
 describe('News Tests', () => {
+
+    
     it('News have all informations', () => {
         cy.visit('/')
         cy.get('.news-item  span')
