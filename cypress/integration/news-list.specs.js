@@ -13,4 +13,6 @@ describe('News List', () => {
         .should('have.attr', 'target')
         .and('equal', '_blank')
     })
+
+    
 })
