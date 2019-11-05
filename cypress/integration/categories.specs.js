@@ -13,7 +13,6 @@ describe('Categories tests', () => {
 
     it('Categories are on all pages', () => {
         let categoriesUrl = ['top', 'new', 'show', 'ask', 'job']
-        let categoriesName = ['Top', 'New', 'Show', 'Ask', 'Jobs']
 
         for(var i = 0; i < categoriesUrl.length; i++){
             cy.visit('/' + categoriesUrl[i])
